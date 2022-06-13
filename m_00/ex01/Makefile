@@ -1,11 +1,13 @@
 FILES = \
-	megaphone.cpp
+	Contact.cpp \
+	PhoneBook.cpp \
+	main.cpp
 
 OBJ = $(FILES:.cpp=.o)
 
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -I.
 
-NAME = megaphone
+NAME = dead_book
 
 all: $(NAME)
 	c++ $(CFLAGS) $(OBJ) -o $(NAME)

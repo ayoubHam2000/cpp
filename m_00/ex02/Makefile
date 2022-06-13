@@ -1,11 +1,12 @@
 FILES = \
-	megaphone.cpp
+	Account.cpp \
+	tests.cpp
 
 OBJ = $(FILES:.cpp=.o)
 
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -I.
 
-NAME = megaphone
+NAME = bank
 
 all: $(NAME)
 	c++ $(CFLAGS) $(OBJ) -o $(NAME)
